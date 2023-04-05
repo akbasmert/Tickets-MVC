@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4120BDF429D9D0790079D314 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4120BDF329D9D0790079D314 /* OnboardingViewController.swift */; };
+		413246AC29D83E7900AC7E3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413246AB29D83E7900AC7E3F /* AppDelegate.swift */; };
+		413246AE29D83E7900AC7E3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413246AD29D83E7900AC7E3F /* SceneDelegate.swift */; };
+		413246B329D83E7900AC7E3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413246B129D83E7900AC7E3F /* Main.storyboard */; };
+		413246B529D83E7A00AC7E3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413246B429D83E7A00AC7E3F /* Assets.xcassets */; };
+		413246B829D83E7A00AC7E3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413246B629D83E7A00AC7E3F /* LaunchScreen.storyboard */; };
+		413246C129D83F1A00AC7E3F /* Passenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413246C029D83F1A00AC7E3F /* Passenger.swift */; };
+		413246C329D83F4600AC7E3F /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413246C229D83F4600AC7E3F /* Date.swift */; };
+		413246C529D83F6700AC7E3F /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413246C429D83F6700AC7E3F /* Time.swift */; };
+		413246C729D83F7800AC7E3F /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413246C629D83F7800AC7E3F /* Ticket.swift */; };
+		413246CA29D870B800AC7E3F /* BusListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413246C929D870B800AC7E3F /* BusListViewController.swift */; };
+		415D2AFC29DA2CA2009EC17B /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D2AFB29DA2CA2009EC17B /* Bus.swift */; };
+		416C777529D8C43F00FC4EEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416C777429D8C43F00FC4EEF /* ViewController.swift */; };
+		419FA82729DAE5F20037B0DC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FA82629DAE5F20037B0DC /* DetailViewController.swift */; };
+		419FA82929DAEE0E0037B0DC /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FA82829DAEE0E0037B0DC /* DetailCollectionViewCell.swift */; };
+		41D4FCBC29DCBCAB00CD7FEC /* DetailBusCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D4FCBA29DCBCAB00CD7FEC /* DetailBusCollectionViewCell.swift */; };
+		41D4FCBD29DCBCAB00CD7FEC /* DetailBusCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D4FCBB29DCBCAB00CD7FEC /* DetailBusCollectionViewCell.xib */; };
+		41D4FCBF29DD8AB100CD7FEC /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D4FCBE29DD8AB100CD7FEC /* PaymentViewController.swift */; };
+		41D4FCC129DD9E9D00CD7FEC /* TicketScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D4FCC029DD9E9D00CD7FEC /* TicketScreenViewController.swift */; };
+		41EA022229D8A616004C2375 /* BusListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA022129D8A616004C2375 /* BusListTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4120BDF329D9D0790079D314 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		413246A829D83E7900AC7E3F /* Bilet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bilet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		413246AB29D83E7900AC7E3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		413246AD29D83E7900AC7E3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		413246B229D83E7900AC7E3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		413246B429D83E7A00AC7E3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		413246B729D83E7A00AC7E3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		413246B929D83E7A00AC7E3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		413246C029D83F1A00AC7E3F /* Passenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger.swift; sourceTree = "<group>"; };
+		413246C229D83F4600AC7E3F /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		413246C429D83F6700AC7E3F /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		413246C629D83F7800AC7E3F /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		413246C929D870B800AC7E3F /* BusListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusListViewController.swift; sourceTree = "<group>"; };
+		415D2AFB29DA2CA2009EC17B /* Bus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
+		416C777429D8C43F00FC4EEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		419FA82629DAE5F20037B0DC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		419FA82829DAEE0E0037B0DC /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		41D4FCBA29DCBCAB00CD7FEC /* DetailBusCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBusCollectionViewCell.swift; sourceTree = "<group>"; };
+		41D4FCBB29DCBCAB00CD7FEC /* DetailBusCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailBusCollectionViewCell.xib; sourceTree = "<group>"; };
+		41D4FCBE29DD8AB100CD7FEC /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		41D4FCC029DD9E9D00CD7FEC /* TicketScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketScreenViewController.swift; sourceTree = "<group>"; };
+		41EA022129D8A616004C2375 /* BusListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusListTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		413246A529D83E7900AC7E3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4132469F29D83E7900AC7E3F = {
+			isa = PBXGroup;
+			children = (
+				413246AA29D83E7900AC7E3F /* Bilet */,
+				413246A929D83E7900AC7E3F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		413246A929D83E7900AC7E3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				413246A829D83E7900AC7E3F /* Bilet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		413246AA29D83E7900AC7E3F /* Bilet */ = {
+			isa = PBXGroup;
+			children = (
+				413246C829D8708E00AC7E3F /* View */,
+				413246BF29D83E8600AC7E3F /* Model */,
+				413246AB29D83E7900AC7E3F /* AppDelegate.swift */,
+				413246AD29D83E7900AC7E3F /* SceneDelegate.swift */,
+				413246B129D83E7900AC7E3F /* Main.storyboard */,
+				413246B429D83E7A00AC7E3F /* Assets.xcassets */,
+				413246B629D83E7A00AC7E3F /* LaunchScreen.storyboard */,
+				413246B929D83E7A00AC7E3F /* Info.plist */,
+			);
+			path = Bilet;
+			sourceTree = "<group>";
+		};
+		413246BF29D83E8600AC7E3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				413246C029D83F1A00AC7E3F /* Passenger.swift */,
+				413246C229D83F4600AC7E3F /* Date.swift */,
+				413246C429D83F6700AC7E3F /* Time.swift */,
+				413246C629D83F7800AC7E3F /* Ticket.swift */,
+				415D2AFB29DA2CA2009EC17B /* Bus.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		413246C829D8708E00AC7E3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				413246C929D870B800AC7E3F /* BusListViewController.swift */,
+				41EA022129D8A616004C2375 /* BusListTableViewCell.swift */,
+				416C777429D8C43F00FC4EEF /* ViewController.swift */,
+				4120BDF329D9D0790079D314 /* OnboardingViewController.swift */,
+				419FA82629DAE5F20037B0DC /* DetailViewController.swift */,
+				419FA82829DAEE0E0037B0DC /* DetailCollectionViewCell.swift */,
+				41D4FCBA29DCBCAB00CD7FEC /* DetailBusCollectionViewCell.swift */,
+				41D4FCBB29DCBCAB00CD7FEC /* DetailBusCollectionViewCell.xib */,
+				41D4FCBE29DD8AB100CD7FEC /* PaymentViewController.swift */,
+				41D4FCC029DD9E9D00CD7FEC /* TicketScreenViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		413246A729D83E7900AC7E3F /* Bilet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 413246BC29D83E7A00AC7E3F /* Build configuration list for PBXNativeTarget "Bilet" */;
+			buildPhases = (
+				413246A429D83E7900AC7E3F /* Sources */,
+				413246A529D83E7900AC7E3F /* Frameworks */,
+				413246A629D83E7900AC7E3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bilet;
+			productName = Bilet;
+			productReference = 413246A829D83E7900AC7E3F /* Bilet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		413246A029D83E7900AC7E3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					413246A729D83E7900AC7E3F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 413246A329D83E7900AC7E3F /* Build configuration list for PBXProject "Bilet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4132469F29D83E7900AC7E3F;
+			productRefGroup = 413246A929D83E7900AC7E3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				413246A729D83E7900AC7E3F /* Bilet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		413246A629D83E7900AC7E3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D4FCBD29DCBCAB00CD7FEC /* DetailBusCollectionViewCell.xib in Resources */,
+				413246B829D83E7A00AC7E3F /* LaunchScreen.storyboard in Resources */,
+				413246B529D83E7A00AC7E3F /* Assets.xcassets in Resources */,
+				413246B329D83E7900AC7E3F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		413246A429D83E7900AC7E3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413246C329D83F4600AC7E3F /* Date.swift in Sources */,
+				419FA82929DAEE0E0037B0DC /* DetailCollectionViewCell.swift in Sources */,
+				413246AC29D83E7900AC7E3F /* AppDelegate.swift in Sources */,
+				413246CA29D870B800AC7E3F /* BusListViewController.swift in Sources */,
+				419FA82729DAE5F20037B0DC /* DetailViewController.swift in Sources */,
+				416C777529D8C43F00FC4EEF /* ViewController.swift in Sources */,
+				41D4FCBC29DCBCAB00CD7FEC /* DetailBusCollectionViewCell.swift in Sources */,
+				41D4FCBF29DD8AB100CD7FEC /* PaymentViewController.swift in Sources */,
+				413246C529D83F6700AC7E3F /* Time.swift in Sources */,
+				413246C129D83F1A00AC7E3F /* Passenger.swift in Sources */,
+				4120BDF429D9D0790079D314 /* OnboardingViewController.swift in Sources */,
+				413246C729D83F7800AC7E3F /* Ticket.swift in Sources */,
+				41D4FCC129DD9E9D00CD7FEC /* TicketScreenViewController.swift in Sources */,
+				415D2AFC29DA2CA2009EC17B /* Bus.swift in Sources */,
+				41EA022229D8A616004C2375 /* BusListTableViewCell.swift in Sources */,
+				413246AE29D83E7900AC7E3F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		413246B129D83E7900AC7E3F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				413246B229D83E7900AC7E3F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		413246B629D83E7A00AC7E3F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				413246B729D83E7A00AC7E3F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		413246BA29D83E7A00AC7E3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		413246BB29D83E7A00AC7E3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		413246BD29D83E7A00AC7E3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bilet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akbas..Bilet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		413246BE29D83E7A00AC7E3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bilet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akbas..Bilet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		413246A329D83E7900AC7E3F /* Build configuration list for PBXProject "Bilet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413246BA29D83E7A00AC7E3F /* Debug */,
+				413246BB29D83E7A00AC7E3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		413246BC29D83E7A00AC7E3F /* Build configuration list for PBXNativeTarget "Bilet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413246BD29D83E7A00AC7E3F /* Debug */,
+				413246BE29D83E7A00AC7E3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 413246A029D83E7900AC7E3F /* Project object */;
+}
