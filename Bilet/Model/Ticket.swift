@@ -11,7 +11,7 @@ class Ticket {
     var passenger: Passenger
     var date: Date
     var time: Time
-    var seat: [Int]?
+    var seat: [Int]
     var numberOfSeats: Int = 0
     
     init(passenger: Passenger, date: Date, time: Time, seat: [Int], numberOfSeats: Int) {

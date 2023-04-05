@@ -59,6 +59,10 @@ class PaymentViewController: UIViewController {
         if segue.identifier == "toTicketScreen" {
             let destinatiınTicketScreen = segue.destination as! TicketScreenViewController
             destinatiınTicketScreen.ticket = ticket
+            destinatiınTicketScreen.bus = bus
+            destinatiınTicketScreen.startCity = startCity
+            destinatiınTicketScreen.lastCity = lastCity
+            destinatiınTicketScreen.ticketTotalPrice = ticketTotalPrice
         }
     }
 }
