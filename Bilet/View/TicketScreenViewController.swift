@@ -15,7 +15,7 @@ class TicketScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(ticket?.passenger.name)
+    //    print(ticket?.passenger.name)
     }
 
 }
