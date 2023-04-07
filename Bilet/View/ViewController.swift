@@ -52,6 +52,11 @@ class ViewController: UIViewController {
         startLabel.text = "Ankara"
         lastLabel.text = "Ordu"
         
+        let controller = storyboard?.instantiateViewController(withIdentifier: "OnboardingVC") as! OnboardingViewController
+       // controller.modalPresentationStyle = .fullScreen
+     // controller.modalTransitionStyle = .flipHorizontal
+        present(controller, animated: true)
+        
     }
 
 // bu gunu ve yarını bir sabite atayarak dene

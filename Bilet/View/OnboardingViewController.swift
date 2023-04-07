@@ -82,7 +82,8 @@ class OnboardingViewController: UIViewController {
             }
         
         if  currentPage == 3 {
-            performSegue(withIdentifier: "toBiletimVC", sender: nil)
+           // performSegue(withIdentifier: "toBiletimVC", sender: nil)
+            dismiss(animated: true)
         }
           
     }
