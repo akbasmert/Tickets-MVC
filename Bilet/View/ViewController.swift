@@ -29,7 +29,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         dateFormatter.dateFormat = "dd-MM-yyyy"
         date = dateFormatter.string(from: datePicker.date)
         
@@ -53,12 +52,12 @@ class ViewController: UIViewController {
         lastLabel.text = "Ordu"
         
         let controller = storyboard?.instantiateViewController(withIdentifier: "OnboardingVC") as! OnboardingViewController
-       // controller.modalPresentationStyle = .fullScreen
+        controller.modalPresentationStyle = .fullScreen
      // controller.modalTransitionStyle = .flipHorizontal
         present(controller, animated: true)
         
     }
-
+    
 // bu gunu ve yarını bir sabite atayarak dene
     @IBAction func todayButton(_ sender: Any) {
         tomorrow = false

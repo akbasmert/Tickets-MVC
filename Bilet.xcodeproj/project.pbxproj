@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4116EE8729E0D2EC00C663D5 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4116EE8629E0D2EC00C663D5 /* Protocol.swift */; };
 		4120BDF429D9D0790079D314 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4120BDF329D9D0790079D314 /* OnboardingViewController.swift */; };
+		41266F2D29E0A7E7003B2305 /* MyTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41266F2C29E0A7E7003B2305 /* MyTicketsViewController.swift */; };
 		413246AC29D83E7900AC7E3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413246AB29D83E7900AC7E3F /* AppDelegate.swift */; };
 		413246AE29D83E7900AC7E3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413246AD29D83E7900AC7E3F /* SceneDelegate.swift */; };
 		413246B329D83E7900AC7E3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413246B129D83E7900AC7E3F /* Main.storyboard */; };
@@ -26,11 +28,14 @@
 		41D4FCBD29DCBCAB00CD7FEC /* DetailBusCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D4FCBB29DCBCAB00CD7FEC /* DetailBusCollectionViewCell.xib */; };
 		41D4FCBF29DD8AB100CD7FEC /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D4FCBE29DD8AB100CD7FEC /* PaymentViewController.swift */; };
 		41D4FCC129DD9E9D00CD7FEC /* TicketScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D4FCC029DD9E9D00CD7FEC /* TicketScreenViewController.swift */; };
+		41E9B40C29E1936D00CEC11F /* MyTicketsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E9B40B29E1936D00CEC11F /* MyTicketsTableViewCell.swift */; };
 		41EA022229D8A616004C2375 /* BusListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA022129D8A616004C2375 /* BusListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4116EE8629E0D2EC00C663D5 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		4120BDF329D9D0790079D314 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		41266F2C29E0A7E7003B2305 /* MyTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketsViewController.swift; sourceTree = "<group>"; };
 		413246A829D83E7900AC7E3F /* Bilet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bilet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		413246AB29D83E7900AC7E3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		413246AD29D83E7900AC7E3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 		41D4FCBB29DCBCAB00CD7FEC /* DetailBusCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailBusCollectionViewCell.xib; sourceTree = "<group>"; };
 		41D4FCBE29DD8AB100CD7FEC /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		41D4FCC029DD9E9D00CD7FEC /* TicketScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketScreenViewController.swift; sourceTree = "<group>"; };
+		41E9B40B29E1936D00CEC11F /* MyTicketsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketsTableViewCell.swift; sourceTree = "<group>"; };
 		41EA022129D8A616004C2375 /* BusListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +98,7 @@
 				413246B429D83E7A00AC7E3F /* Assets.xcassets */,
 				413246B629D83E7A00AC7E3F /* LaunchScreen.storyboard */,
 				413246B929D83E7A00AC7E3F /* Info.plist */,
+				4116EE8629E0D2EC00C663D5 /* Protocol.swift */,
 			);
 			path = Bilet;
 			sourceTree = "<group>";
@@ -121,6 +128,8 @@
 				41D4FCBB29DCBCAB00CD7FEC /* DetailBusCollectionViewCell.xib */,
 				41D4FCBE29DD8AB100CD7FEC /* PaymentViewController.swift */,
 				41D4FCC029DD9E9D00CD7FEC /* TicketScreenViewController.swift */,
+				41266F2C29E0A7E7003B2305 /* MyTicketsViewController.swift */,
+				41E9B40B29E1936D00CEC11F /* MyTicketsTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,14 +208,17 @@
 			files = (
 				413246C329D83F4600AC7E3F /* Date.swift in Sources */,
 				419FA82929DAEE0E0037B0DC /* DetailCollectionViewCell.swift in Sources */,
+				41266F2D29E0A7E7003B2305 /* MyTicketsViewController.swift in Sources */,
 				413246AC29D83E7900AC7E3F /* AppDelegate.swift in Sources */,
 				413246CA29D870B800AC7E3F /* BusListViewController.swift in Sources */,
+				4116EE8729E0D2EC00C663D5 /* Protocol.swift in Sources */,
 				419FA82729DAE5F20037B0DC /* DetailViewController.swift in Sources */,
 				416C777529D8C43F00FC4EEF /* ViewController.swift in Sources */,
 				41D4FCBC29DCBCAB00CD7FEC /* DetailBusCollectionViewCell.swift in Sources */,
 				41D4FCBF29DD8AB100CD7FEC /* PaymentViewController.swift in Sources */,
 				413246C529D83F6700AC7E3F /* Time.swift in Sources */,
 				413246C129D83F1A00AC7E3F /* Passenger.swift in Sources */,
+				41E9B40C29E1936D00CEC11F /* MyTicketsTableViewCell.swift in Sources */,
 				4120BDF429D9D0790079D314 /* OnboardingViewController.swift in Sources */,
 				413246C729D83F7800AC7E3F /* Ticket.swift in Sources */,
 				41D4FCC129DD9E9D00CD7FEC /* TicketScreenViewController.swift in Sources */,

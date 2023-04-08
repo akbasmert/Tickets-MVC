@@ -24,6 +24,8 @@ class PaymentViewController: UIViewController {
     var ticketTotalPrice: String = "0"
     var ticketNumber: [Int] = []
     var ticket: Ticket?
+    
+ 
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,15 +63,13 @@ class PaymentViewController: UIViewController {
                 let hour = Int(timeComponents?[0] ?? "0")!
                 let minute = Int(timeComponents?[1] ?? "0")!
 
-
                 ticket = Ticket(passenger: Passenger(id: Int(id) ?? 0, name: name, surname: surName), date: Date(day: day, month: month, year: year), time: Time(hour: hour, minute: minute), seat: ticketNumber, numberOfSeats: ticketNumber.count)
-                
-                performSegue(withIdentifier: "toTicketScreen", sender: nil)
 
+              
+                performSegue(withIdentifier: "toTicketScreen", sender: nil)
+                
             }
         }
-  
-      
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

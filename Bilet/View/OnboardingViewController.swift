@@ -66,6 +66,9 @@ class OnboardingViewController: UIViewController {
         }
     }
 
+    @IBAction func closeButton(_ sender: Any) {
+        dismiss(animated: true)
+    }
     @IBAction func nextButton(_ sender: Any) {
             pageControl.currentPage += 1
             currentPage += 1

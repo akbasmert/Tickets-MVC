@@ -6,8 +6,9 @@
 //
 
 import UIKit
-
 class TicketScreenViewController: UIViewController {
+    
+   
     
     @IBOutlet weak var busImageView: UIImageView!
     @IBOutlet weak var startCityLabel: UILabel!
@@ -23,11 +24,13 @@ class TicketScreenViewController: UIViewController {
     var startCity: String = ""
     var lastCity: String = ""
     var ticketTotalPrice: String = ""
+    var delegate: VeriGonderici?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationItem.hidesBackButton = true
         busImageView.image = UIImage(named: bus?.imageName ?? "kamil")
         startCityLabel.text = startCity
         lastCityLabel.text = lastCity
@@ -36,8 +39,14 @@ class TicketScreenViewController: UIViewController {
         idLabel.text = "TCKN: \( ticket?.passenger.id ?? 0)"
         seatNumberLabel.text =  "Koltuk Seçiminiz: \(ticket?.seat.map { String($0) }.joined(separator: ", ") ?? "")"
         ticketPriceLabel.text = "Ödeme Tutarı: " + ticketTotalPrice
-    //    print(ticket?.passenger.name)
     }
-
-
+    
+   
+    
+    
+    @IBAction func closeButton(_ sender: Any) {
+        self.delegate?.veriGonder(veri: "veri gönderildi")
+        navigationController?.popToRootViewController(animated: true)
+        
+    }
 }
