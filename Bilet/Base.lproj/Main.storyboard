@@ -634,57 +634,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="code" translatesAutoresizingMaskIntoConstraints="NO" id="hKM-0V-7t8">
-                                <rect key="frame" x="32" y="263" width="329" height="100"/>
+                                <rect key="frame" x="32" y="238" width="329" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="CbP-T5-ACh"/>
+                                    <constraint firstAttribute="height" constant="70" id="CbP-T5-ACh"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="metro" translatesAutoresizingMaskIntoConstraints="NO" id="eHk-pc-dZW">
-                                <rect key="frame" x="32" y="123" width="329" height="120"/>
+                                <rect key="frame" x="32" y="108" width="329" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="tpd-Rr-Pw7"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Şanlıurfa" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nw-xJ-tcA">
-                                <rect key="frame" x="16" y="393" width="92.333333333333329" height="21"/>
+                                <rect key="frame" x="16" y="338" width="92.333333333333329" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şanlıurfa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD6-Px-yw4">
-                                <rect key="frame" x="284.66666666666669" y="393" width="92.333333333333314" height="21"/>
+                                <rect key="frame" x="284.66666666666669" y="338" width="92.333333333333314" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="&lt; 01/02/2024 10:30 &gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzZ-9d-f1M">
-                                <rect key="frame" x="118.33333333333333" y="393" width="156.33333333333337" height="20.333333333333314"/>
+                                <rect key="frame" x="118.33333333333333" y="338" width="156.33333333333337" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mert AKBAŞ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Bc-Wu-Qtv">
-                                <rect key="frame" x="16" y="434" width="175.66666666666666" height="21"/>
+                                <rect key="frame" x="16" y="379" width="175.66666666666666" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TCKN: 11111111111" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQB-cd-uQc">
-                                <rect key="frame" x="201.66666666666663" y="434" width="175.33333333333337" height="21"/>
+                                <rect key="frame" x="201.66666666666663" y="379" width="175.33333333333337" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Koltuk Numaranız: 1, 2, 19, 23, 39" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgw-K9-L60">
-                                <rect key="frame" x="16" y="475" width="361" height="21"/>
+                                <rect key="frame" x="16" y="420" width="361" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="mCk-2p-4Ah">
-                                <rect key="frame" x="16" y="563.66666666666663" width="361" height="100"/>
+                                <rect key="frame" x="16" y="593.66666666666663" width="361" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="qCH-HF-6zQ"/>
+                                    <constraint firstAttribute="height" constant="70" id="qCH-HF-6zQ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biletiniz başarıyla alınmıştır." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbg-NL-GVj">
@@ -700,7 +700,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toplam Tutar: 500₺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Kl-Yy-rr5">
-                                <rect key="frame" x="16" y="516" width="361" height="21"/>
+                                <rect key="frame" x="16" y="461" width="361" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -719,11 +719,11 @@
                             <constraint firstItem="bD6-Px-yw4" firstAttribute="leading" secondItem="tzZ-9d-f1M" secondAttribute="trailing" constant="10" id="Jcp-Ll-IOa"/>
                             <constraint firstItem="tzZ-9d-f1M" firstAttribute="centerX" secondItem="mWA-aX-eHT" secondAttribute="centerX" id="K0M-J1-8xA"/>
                             <constraint firstItem="iQB-cd-uQc" firstAttribute="leading" secondItem="6Bc-Wu-Qtv" secondAttribute="trailing" constant="10" id="Kb4-jA-Q0D"/>
-                            <constraint firstItem="eHk-pc-dZW" firstAttribute="top" secondItem="PD5-9J-L3l" secondAttribute="top" constant="20" id="L9J-Bw-lE8"/>
+                            <constraint firstItem="eHk-pc-dZW" firstAttribute="top" secondItem="PD5-9J-L3l" secondAttribute="top" constant="5" id="L9J-Bw-lE8"/>
                             <constraint firstItem="6Bc-Wu-Qtv" firstAttribute="top" secondItem="6Nw-xJ-tcA" secondAttribute="bottom" constant="20" id="MCU-b2-SgX"/>
                             <constraint firstItem="vjt-0L-5P2" firstAttribute="centerX" secondItem="mWA-aX-eHT" secondAttribute="centerX" id="RH1-zj-wg5"/>
                             <constraint firstItem="PD5-9J-L3l" firstAttribute="trailing" secondItem="bD6-Px-yw4" secondAttribute="trailing" constant="16" id="SkB-oe-RGc"/>
-                            <constraint firstItem="hKM-0V-7t8" firstAttribute="top" secondItem="eHk-pc-dZW" secondAttribute="bottom" constant="20" id="Th0-Cl-Fkt"/>
+                            <constraint firstItem="hKM-0V-7t8" firstAttribute="top" secondItem="eHk-pc-dZW" secondAttribute="bottom" constant="10" id="Th0-Cl-Fkt"/>
                             <constraint firstItem="6Bc-Wu-Qtv" firstAttribute="width" secondItem="iQB-cd-uQc" secondAttribute="width" id="Vhh-kX-t8C"/>
                             <constraint firstItem="PD5-9J-L3l" firstAttribute="trailing" secondItem="Xgw-K9-L60" secondAttribute="trailing" constant="16" id="WV7-UK-9nr"/>
                             <constraint firstItem="iQB-cd-uQc" firstAttribute="top" secondItem="bD6-Px-yw4" secondAttribute="bottom" constant="20" id="YkN-tD-nQC"/>
@@ -964,10 +964,10 @@
                                                     </constraints>
                                                 </stackView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="code" translatesAutoresizingMaskIntoConstraints="NO" id="xwJ-kD-WSy">
-                                                    <rect key="frame" x="187" y="16" width="150" height="70"/>
+                                                    <rect key="frame" x="287" y="16" width="50" height="70"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="70" id="QbH-ag-aY1"/>
-                                                        <constraint firstAttribute="width" constant="150" id="oyz-rv-Ab1"/>
+                                                        <constraint firstAttribute="width" constant="50" id="oyz-rv-Ab1"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
@@ -998,6 +998,15 @@
                                                 <constraint firstItem="FY8-ic-v6Z" firstAttribute="top" secondItem="BBY-Xc-OZN" secondAttribute="bottom" constant="16" id="zaC-vB-c14"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="busImageView" destination="ttB-Z5-g8B" id="cxZ-FC-57p"/>
+                                            <outlet property="dateLabel" destination="gUB-aE-i3W" id="2zg-yz-s4D"/>
+                                            <outlet property="lastCityLabel" destination="OsE-r6-Emu" id="1ng-95-psd"/>
+                                            <outlet property="nameLabel" destination="BBY-Xc-OZN" id="Uvq-ji-ba5"/>
+                                            <outlet property="priceLabel" destination="Lct-bo-8A0" id="i9E-wn-k8M"/>
+                                            <outlet property="seatsLabel" destination="FY8-ic-v6Z" id="PUY-je-GyT"/>
+                                            <outlet property="startCityLabel" destination="HEg-BT-SnD" id="N7P-Bj-mfZ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

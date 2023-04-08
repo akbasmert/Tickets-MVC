@@ -7,8 +7,7 @@
 
 import UIKit
 class TicketScreenViewController: UIViewController {
-    
-   
+  
     
     @IBOutlet weak var busImageView: UIImageView!
     @IBOutlet weak var startCityLabel: UILabel!
@@ -24,7 +23,12 @@ class TicketScreenViewController: UIViewController {
     var startCity: String = ""
     var lastCity: String = ""
     var ticketTotalPrice: String = ""
-    var delegate: VeriGonderici?
+    
+    static var myTicketScreenTicket: Ticket?
+    static var myTicketScreenBus: Bus?
+    static var myTicketScreenStartCity: String = ""
+    static var myTicketScreenLastCity: String = ""
+    static var myTicketScreenTicketTotalPrice: String = ""
     
     
     override func viewDidLoad() {
@@ -45,8 +49,13 @@ class TicketScreenViewController: UIViewController {
     
     
     @IBAction func closeButton(_ sender: Any) {
-        self.delegate?.veriGonder(veri: "veri gönderildi")
         navigationController?.popToRootViewController(animated: true)
+        
+        TicketScreenViewController.myTicketScreenBus = bus
+        TicketScreenViewController.myTicketScreenLastCity = lastCity
+        TicketScreenViewController.myTicketScreenStartCity = startCity
+        TicketScreenViewController.myTicketScreenTicket = ticket
+        TicketScreenViewController.myTicketScreenTicketTotalPrice = ticketTotalPrice
         
     }
 }
