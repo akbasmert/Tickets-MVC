@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import Lottie
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var startLabel: UITextField!
     @IBOutlet weak var lastLabel: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var animationView: UIView!
     
     let dateFormatter = DateFormatter()
     var startPickerView: UIPickerView?
@@ -55,10 +58,19 @@ class ViewController: UIViewController {
         controller.modalPresentationStyle = .fullScreen
      // controller.modalTransitionStyle = .flipHorizontal
         present(controller, animated: true)
+        lottieAnimation()
         
     }
     
-// bu gunu ve yarını bir sabite atayarak dene
+    func lottieAnimation(){
+        let subAnimationView = LottieAnimationView(name: "animationmap")
+        animationView.contentMode = .scaleAspectFit
+        animationView.addSubview(subAnimationView)
+        subAnimationView.frame = animationView.bounds
+        subAnimationView.loopMode = .loop
+        subAnimationView.play()
+    }
+    
     @IBAction func todayButton(_ sender: Any) {
         tomorrow = false
         

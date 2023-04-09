@@ -37,7 +37,7 @@ class OnboardingViewController: UIViewController {
     private func changeScrollView() {
         scroolView.contentSize = CGSize(width: view.frame.size.width*3, height: scroolView.frame.size.height)
         scroolView.isPagingEnabled = true
-    //    let colors: [UIColor] = [.systemRed, .systemGray, .systemGreen]
+
         let titles: [String] = ["BİLETİM SİZİN İÇİN", "ANINDA İADE", "BEDAVA BİLET"]
         let descriptions: [String] = ["Biletim ile seyahat etmek çok kolay. Kolay kullanım, sade arayüz ve daha fazlası sizin için.", "Kalkış saatinde 30 dk öncesine kadar anında iade garantisi Biletim de.", "Her bilet satın alımınızla puan kazanaın ve kazandığnız puanlarla bilet alın."]
         let images: [String] = ["otobus", "salary", "free"]

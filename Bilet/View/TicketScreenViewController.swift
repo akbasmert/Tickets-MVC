@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Lottie
+
 class TicketScreenViewController: UIViewController {
   
     
@@ -17,6 +19,7 @@ class TicketScreenViewController: UIViewController {
     @IBOutlet weak var idLabel: UILabel!
     @IBOutlet weak var seatNumberLabel: UILabel!
     @IBOutlet weak var ticketPriceLabel: UILabel!
+    @IBOutlet weak var animationView: UIView!
     
     var ticket: Ticket?
     var bus: Bus?
@@ -43,10 +46,8 @@ class TicketScreenViewController: UIViewController {
         idLabel.text = "TCKN: \( ticket?.passenger.id ?? 0)"
         seatNumberLabel.text =  "Koltuk Seçiminiz: \(ticket?.seat.map { String($0) }.joined(separator: ", ") ?? "")"
         ticketPriceLabel.text = "Ödeme Tutarı: " + ticketTotalPrice
+        lottieAnimation()
     }
-    
-   
-    
     
     @IBAction func closeButton(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
@@ -56,6 +57,14 @@ class TicketScreenViewController: UIViewController {
         TicketScreenViewController.myTicketScreenStartCity = startCity
         TicketScreenViewController.myTicketScreenTicket = ticket
         TicketScreenViewController.myTicketScreenTicketTotalPrice = ticketTotalPrice
-        
+    }
+    
+    func lottieAnimation(){
+        let subAnimationView = LottieAnimationView(name: "animationCheck")
+        animationView.contentMode = .scaleAspectFit
+        animationView.addSubview(subAnimationView)
+        subAnimationView.frame = animationView.bounds
+        subAnimationView.loopMode = .loop
+        subAnimationView.play()
     }
 }
