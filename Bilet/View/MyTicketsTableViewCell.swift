@@ -24,12 +24,10 @@ class MyTicketsTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
 
     func configured(priceLabel: String, startLabel: String, lastCityLabel: String, bus: Bus, ticket: Ticket) {
-          
         self.nameLabel.text = "\(ticket.passenger.name) \(ticket.passenger.surname)"
         self.dateLabel.text = "\(ticket.date.day)/\(ticket.date.month)/\(ticket.date.year) \(ticket.time.hour):\(ticket.time.minute)"
         self.seatsLabel.text =  "Koltuk No: \(ticket.seat.map { String($0) }.joined(separator: ", "))"
@@ -37,6 +35,5 @@ class MyTicketsTableViewCell: UITableViewCell {
         self.startCityLabel.text = startLabel
         self.lastCityLabel.text = lastCityLabel
         self.busImageView.image = UIImage(named: bus.imageName ?? "ali")
-          
       }
 }

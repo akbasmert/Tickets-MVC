@@ -144,7 +144,6 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
             seatChoose.text = "Koltuk Seçiminiz: \(ticketNumber.map { String($0) }.joined(separator: ", "))"
             ticketTotalPrice = String(Int((bus?.price!.replacingOccurrences(of: " TL", with: ""))!)! * reservationSeats.count) + "₺"
             seatPrice.text = ticketTotalPrice
-            print(ticketNumber)
         }
     }
     
@@ -153,8 +152,6 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let gridLayout = collectionViewLayout as! UICollectionViewFlowLayout
-        let widthPerItem = collectionView.frame.width / 3 - gridLayout.minimumInteritemSpacing
         return CGSize(width:32, height:32)
     }
 }
