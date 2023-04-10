@@ -11,11 +11,11 @@ class MyTicketsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
 
-    var ticket: Ticket?
-    var bus: Bus?
-    var startCity: String = ""
-    var lastCity: String = ""
-    var ticketTotalPrice: String = ""
+    private var ticket: Ticket?
+    private var bus: Bus?
+    private var startCity: String = ""
+    private var lastCity: String = ""
+    private var ticketTotalPrice: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,7 @@ extension MyTicketsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
      
         if startCity == "" {
-            let backgroundImageView = UIImageView(image: UIImage(named: "ticketnew"))
+            let backgroundImageView = UIImageView(image: UIImage(named: "ticketOne"))
             backgroundImageView.contentMode = .scaleAspectFit
             tableView.backgroundView = backgroundImageView
             return 0

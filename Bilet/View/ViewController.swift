@@ -18,13 +18,13 @@ class ViewController: UIViewController {
     var citys = ["Adana", "Ankara", "Bursa", "Gaziantep", "İstanbul", "İzmir", "Konya", "Mersin", "Ordu", "Şanlıurfa", "Antalya"]
 
     let dateFormatter = DateFormatter()
-    var startPickerView: UIPickerView?
-    var lastPickerView: UIPickerView?
-    var startCity: String = "s"
-    var lastCity: String = "l"
-    var date: String = "t"
-    var tomorrow: Bool = false
-    var today: Bool = true
+    private var startPickerView: UIPickerView?
+    private var lastPickerView: UIPickerView?
+    private var startCity: String = ""
+    private var lastCity: String = ""
+    private var date: String = ""
+    private var tomorrow: Bool = false
+    private var today: Bool = true
     
     
     override func viewDidLoad() {
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         lottieAnimation()
     }
     
-    func lottieAnimation(){
+    private func lottieAnimation(){
         let subAnimationView = LottieAnimationView(name: "animationmap")
         animationView.contentMode = .scaleAspectFit
         animationView.addSubview(subAnimationView)
@@ -104,7 +104,7 @@ class ViewController: UIViewController {
     @IBAction func datePicker(_ sender: Any) {
             dateFormatter.dateFormat = "dd-MM-yyyy"
             date = dateFormatter.string(from: datePicker.date)
-            view.endEditing(true)
+            self.view.endEditing(true)
     }
 }
 

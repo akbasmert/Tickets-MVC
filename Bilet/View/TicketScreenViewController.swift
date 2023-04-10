@@ -57,7 +57,7 @@ class TicketScreenViewController: UIViewController {
         TicketScreenViewController.myTicketScreenTicketTotalPrice = ticketTotalPrice
     }
     
-    func lottieAnimation(){
+    private func lottieAnimation(){
         let subAnimationView = LottieAnimationView(name: "animationCheck")
         animationView.contentMode = .scaleAspectFit
         animationView.addSubview(subAnimationView)

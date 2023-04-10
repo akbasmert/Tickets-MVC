@@ -8,6 +8,7 @@
 import UIKit
 
 class DetailCollectionViewCell: UICollectionViewCell {
+    
     @IBOutlet weak var uiView: UIView!
     @IBOutlet weak var label: UILabel!
     

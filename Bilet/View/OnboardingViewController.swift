@@ -13,11 +13,10 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var pageControl: UIPageControl!
     
-    var currentPage = 0
+    private var currentPage = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         pageControl.addTarget(self, action: #selector(pageChange(_:)), for: .valueChanged)
         scroolView.delegate = self
     }
@@ -85,9 +84,9 @@ class OnboardingViewController: UIViewController {
                 nextButton.setTitle("Next", for: .normal)
             }
         
-        if  currentPage == 3 {
-            dismiss(animated: true)
-        }
+            if  currentPage == 3 {
+                dismiss(animated: true)
+            }
     }
 }
 

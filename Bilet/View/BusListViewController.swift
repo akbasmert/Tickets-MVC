@@ -11,8 +11,8 @@ class BusListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var busCompany =  [Bus]()
-    var bus: Bus?
+    private var busCompany =  [Bus]()
+    private var bus: Bus?
     var startCity: String = ""
     var lastCity: String = ""
     var date: String = ""

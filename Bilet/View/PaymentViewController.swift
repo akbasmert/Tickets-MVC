@@ -23,7 +23,7 @@ class PaymentViewController: UIViewController {
     var date: String = ""
     var ticketTotalPrice: String = "0"
     var ticketNumber: [Int] = []
-    var ticket: Ticket?
+    private var ticket: Ticket?
     
     override func viewDidLoad() {
         super.viewDidLoad()
