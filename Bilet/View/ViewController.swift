@@ -15,14 +15,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var animationView: UIView!
     
+    var citys = ["Adana", "Ankara", "Bursa", "Gaziantep", "İstanbul", "İzmir", "Konya", "Mersin", "Ordu", "Şanlıurfa", "Antalya"]
+
     let dateFormatter = DateFormatter()
     var startPickerView: UIPickerView?
     var lastPickerView: UIPickerView?
-
-    var citys = ["Adana", "Ankara", "Bursa", "Gaziantep", "İstanbul", "İzmir", "Konya", "Mersin", "Ordu", "Şanlıurfa", "Antalya"]
-
-
-    
     var startCity: String = "s"
     var lastCity: String = "l"
     var date: String = "t"
@@ -32,10 +29,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dateFormatter.dateFormat = "dd-MM-yyyy"
-        date = dateFormatter.string(from: datePicker.date)
         
         navigationItem.hidesBackButton = true
+
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        date = dateFormatter.string(from: datePicker.date)
         
         startPickerView = UIPickerView()
         lastPickerView = UIPickerView()
@@ -43,23 +41,21 @@ class ViewController: UIViewController {
         lastPickerView?.delegate = self
         startPickerView?.delegate = self
         startPickerView?.dataSource = self
-        startLabel.inputView = startPickerView
-        lastLabel.inputView = lastPickerView
         startPickerView?.tag = 0
         lastPickerView?.tag = 1
-        
         startPickerView?.selectRow(1, inComponent: 0, animated: false)
         lastPickerView?.selectRow(8, inComponent: 0, animated: false)
-
+        
+        startLabel.inputView = startPickerView
+        lastLabel.inputView = lastPickerView
         startLabel.text = "Ankara"
         lastLabel.text = "Ordu"
         
         let controller = storyboard?.instantiateViewController(withIdentifier: "OnboardingVC") as! OnboardingViewController
         controller.modalPresentationStyle = .fullScreen
-     // controller.modalTransitionStyle = .flipHorizontal
         present(controller, animated: true)
-        lottieAnimation()
         
+        lottieAnimation()
     }
     
     func lottieAnimation(){
@@ -73,7 +69,6 @@ class ViewController: UIViewController {
     
     @IBAction func todayButton(_ sender: Any) {
         tomorrow = false
-        
         if !today {
             let modifiedDate = Calendar.current.date(byAdding: .day, value: -1, to: datePicker.date)
             date = dateFormatter.string(from: modifiedDate ?? datePicker.date)
@@ -84,7 +79,6 @@ class ViewController: UIViewController {
     
     @IBAction func tomorrowButton(_ sender: Any) {
         today = false
-        
         if !tomorrow {
             let modifiedDate = Calendar.current.date(byAdding: .day, value: 1, to: datePicker.date)
             date = dateFormatter.string(from: modifiedDate ?? datePicker.date)
@@ -94,7 +88,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func goToButton(_ sender: Any) {
-        
         startCity = startLabel.text ?? ""
         lastCity = lastLabel.text ?? ""
       
@@ -102,9 +95,7 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         
         let goToBusListVC = segue.destination as! BusListViewController
-        
         goToBusListVC.startCity = startCity
         goToBusListVC.lastCity = lastCity
         goToBusListVC.date = date
@@ -115,7 +106,6 @@ class ViewController: UIViewController {
             date = dateFormatter.string(from: datePicker.date)
             view.endEditing(true)
     }
-    
 }
 
 extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
@@ -132,7 +122,6 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
         if pickerView.tag == 0 {
             startLabel.text = citys[row]
         } else {

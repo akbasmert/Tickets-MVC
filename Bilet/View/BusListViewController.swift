@@ -13,7 +13,6 @@ class BusListViewController: UIViewController {
     
     var busCompany =  [Bus]()
     var bus: Bus?
-    
     var startCity: String = ""
     var lastCity: String = ""
     var date: String = ""
@@ -45,7 +44,7 @@ class BusListViewController: UIViewController {
         
         tableView.separatorStyle = .singleLine
         tableView.separatorColor = UIColor.red
-        tableView.separatorInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10) // Bu satır ayırıcının tam genişliğini ayarlar
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -60,20 +59,15 @@ extension BusListViewController: UITableViewDataSource, UITableViewDelegate {
     }
   
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! BusListTableViewCell
-        cell.startCityLabel.text = startCity
-        cell.lastCityLabel.text = lastCity
-        cell.busPrice.text = busCompany[indexPath.row].price
-        cell.busRoadTime.text = busCompany[indexPath.row].roadTime
-        cell.busImageView.image = UIImage(named: busCompany[indexPath.row].imageName ?? "star")
-        cell.busStartTime.text = busCompany[indexPath.row].startTime
-        cell.busSeatStatus.text = busCompany[indexPath.row].seatStatus
+        bus = busCompany[indexPath.row]
+        cell.configured(startCity: startCity, lastCity: lastCity, bus: bus!)
         cell.contentView.layer.cornerRadius = 50.0
         cell.contentView.layer.masksToBounds = true
            
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         bus = busCompany[indexPath.row]
         performSegue(withIdentifier: "toDetailVC", sender: nil)
@@ -87,10 +81,6 @@ extension BusListViewController: UITableViewDataSource, UITableViewDelegate {
             destinationDetailVc.lastCity = lastCity
             destinationDetailVc.date = date
             destinationDetailVc.bus = bus
-            
         }
     }
- 
-
-   
 }

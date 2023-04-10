@@ -9,7 +9,6 @@ import UIKit
 import Lottie
 
 class TicketScreenViewController: UIViewController {
-  
     
     @IBOutlet weak var busImageView: UIImageView!
     @IBOutlet weak var startCityLabel: UILabel!
@@ -32,7 +31,6 @@ class TicketScreenViewController: UIViewController {
     static var myTicketScreenStartCity: String = ""
     static var myTicketScreenLastCity: String = ""
     static var myTicketScreenTicketTotalPrice: String = ""
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

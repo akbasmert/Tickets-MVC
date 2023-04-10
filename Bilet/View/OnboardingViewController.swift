@@ -9,14 +9,15 @@ import UIKit
 
 class OnboardingViewController: UIViewController {
     
-    
     @IBOutlet weak var scroolView: UIScrollView!
     @IBOutlet weak var nextButton: UIButton!
-    var currentPage = 0
-
     @IBOutlet weak var pageControl: UIPageControl!
+    
+    var currentPage = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         pageControl.addTarget(self, action: #selector(pageChange(_:)), for: .valueChanged)
         scroolView.delegate = self
     }
@@ -43,7 +44,6 @@ class OnboardingViewController: UIViewController {
         let images: [String] = ["otobus", "salary", "free"]
       
         for i in 0..<3 {
-            
             let page = UIView(frame: CGRect(x: CGFloat(i)*view.frame.size.width, y: 0, width: view.frame.size.width, height: scroolView.frame.size.height))
                 scroolView.addSubview(page)
             
@@ -65,10 +65,11 @@ class OnboardingViewController: UIViewController {
                 scroolView.addSubview(image)
         }
     }
-
+    
     @IBAction func closeButton(_ sender: Any) {
         dismiss(animated: true)
     }
+    
     @IBAction func nextButton(_ sender: Any) {
             pageControl.currentPage += 1
             currentPage += 1
@@ -85,15 +86,11 @@ class OnboardingViewController: UIViewController {
             }
         
         if  currentPage == 3 {
-           // performSegue(withIdentifier: "toBiletimVC", sender: nil)
             dismiss(animated: true)
         }
-          
     }
-        
 }
 
-// Sayfayı scroll ettiğimizde noktalarında değişmesini sağlıyor.
 extension OnboardingViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         pageControl.currentPage = Int(floor(Float(scrollView.contentOffset.x) / Float(scrollView.frame.size.width)))
@@ -103,6 +100,5 @@ extension OnboardingViewController: UIScrollViewDelegate {
         }else{
             nextButton.setTitle("Next", for: .normal)
         }
-      
     }
 }

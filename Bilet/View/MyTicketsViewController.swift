@@ -19,10 +19,8 @@ class MyTicketsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableView.delegate = self
         tableView.dataSource = self
-     
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,21 +31,15 @@ class MyTicketsViewController: UIViewController {
         ticketTotalPrice = TicketScreenViewController.myTicketScreenTicketTotalPrice
         tableView.reloadData()
     }
-    
-    
-  
 }
 
 extension MyTicketsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
      
         if startCity == "" {
-            
             let backgroundImageView = UIImageView(image: UIImage(named: "ticketnew"))
             backgroundImageView.contentMode = .scaleAspectFit
-
             tableView.backgroundView = backgroundImageView
-
             return 0
         } else {
            tableView.backgroundView = nil
@@ -64,6 +56,4 @@ extension MyTicketsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
-    
 }

@@ -25,16 +25,13 @@ class PaymentViewController: UIViewController {
     var ticketNumber: [Int] = []
     var ticket: Ticket?
     
- 
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         busİmageViev.image = UIImage(named: bus?.imageName ?? "pamukkale")
         paymentPriceLabel.text = "Ödeme Tutarı: " + ticketTotalPrice
         seatNumbersLabel.text = "Koltuk Seçiminiz: \(ticketNumber.map { String($0) }.joined(separator: ", "))"
         self.title = "BİLETİM.COM"
-        
     }
     
     @IBAction func paymentButton(_ sender: Any) {
@@ -43,17 +40,20 @@ class PaymentViewController: UIViewController {
             let alertName =   UIAlertController(title: "", message: "Lütfen adınızı giriniz.", preferredStyle: .alert)
             alertName.addAction(UIAlertAction(title: "Tamam", style: .destructive, handler: nil))
               self.present(alertName,animated: true)
+            
         } else if passengerSurNameTF.text == "" {
             let alertSurName =   UIAlertController(title: "", message: "Lütfen soy adınızı giriniz.", preferredStyle: .alert)
             alertSurName.addAction(UIAlertAction(title: "Tamam", style: .destructive, handler: nil))
               self.present(alertSurName,animated: true)
+            
         } else if passengerIdTF.text == "" {
             let alertId =   UIAlertController(title: "", message: "Lütfen TCKN giriniz.", preferredStyle: .alert)
             alertId.addAction(UIAlertAction(title: "Tamam", style: .destructive, handler: nil))
               self.present(alertId,animated: true)
+            
         } else {
             if let id = passengerIdTF.text, let name = passengerNameTF.text, let surName = passengerSurNameTF.text {
-
+                
                 let dateComponents = date.components(separatedBy: "-")
                 let day = Int(dateComponents[0]) ?? 1
                 let month = Int(dateComponents[1]) ?? 1
@@ -64,10 +64,8 @@ class PaymentViewController: UIViewController {
                 let minute = Int(timeComponents?[1] ?? "0")!
 
                 ticket = Ticket(passenger: Passenger(id: Int(id) ?? 0, name: name, surname: surName), date: Date(day: day, month: month, year: year), time: Time(hour: hour, minute: minute), seat: ticketNumber, numberOfSeats: ticketNumber.count)
-
-              
-                performSegue(withIdentifier: "toTicketScreen", sender: nil)
                 
+                performSegue(withIdentifier: "toTicketScreen", sender: nil)
             }
         }
     }

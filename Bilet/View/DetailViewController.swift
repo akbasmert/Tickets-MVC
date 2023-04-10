@@ -20,7 +20,6 @@ class DetailViewController: UIViewController {
     var lastCity: String = ""
     var date: String = ""
     var ticketTotalPrice: String = "0"
-    
     var seatNumber: [Int] = [1,2,3,3,4,5,6,6,7,8,9,9,10,11,12,12,13,14,15,15,16,17,18,18,19,20,21,21,22,23,24,24,25,26,27,27,28,29,30,30,31,32,33,33,34,35,36,36,37,38,39,39]
     var soldSeats: [Int] = [1, 5,6, 7,39 ,23]
     var secretSeats: [Int] = [2,6,10,14,18,22,26,30,34,38,42,46,50]
@@ -30,18 +29,15 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 5
         layout.minimumInteritemSpacing = 5
+        collectionView.delegate = self
+        collectionView.dataSource = self
         collectionView.setCollectionViewLayout(layout, animated: true)
         collectionView.register(UINib(nibName: "DetailBusCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "detailBusCell")
-
         ticketPayButton.alpha = 0.8
-        
         imageView.image = UIImage(named: bus?.imageName ?? "ali")
         // Do any additional setup after loading the view.
     }
@@ -50,7 +46,7 @@ class DetailViewController: UIViewController {
         if reservationSeats.isEmpty {
             let alertSeatPay =   UIAlertController(title: "", message: "Lütfen koltuk seçiniz.", preferredStyle: .alert)
             alertSeatPay.addAction(UIAlertAction(title: "Tamam", style: .destructive, handler: nil))
-              self.present(alertSeatPay,animated: true)
+            self.present(alertSeatPay,animated: true)
         } else {
             performSegue(withIdentifier: "toPaymentVC", sender: nil)
         }
@@ -59,12 +55,12 @@ class DetailViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toPaymentVC" {
             let destinationPaymentVC = segue.destination as! PaymentViewController
-            destinationPaymentVC.ticketTotalPrice = ticketTotalPrice
-            destinationPaymentVC.bus = bus
-            destinationPaymentVC.date = date
-            destinationPaymentVC.lastCity = lastCity
-            destinationPaymentVC.startCity = startCity
-            destinationPaymentVC.ticketNumber = ticketNumber
+                destinationPaymentVC.ticketTotalPrice = ticketTotalPrice
+                destinationPaymentVC.bus = bus
+                destinationPaymentVC.date = date
+                destinationPaymentVC.lastCity = lastCity
+                destinationPaymentVC.startCity = startCity
+                destinationPaymentVC.ticketNumber = ticketNumber
         }
     }
 }
@@ -76,7 +72,6 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         if section == 0 {
             return 4
         } else {
@@ -89,6 +84,7 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
         if indexPath.section == 0 {
             let   cell = collectionView.dequeueReusableCell(withReuseIdentifier: "detailBusCell", for: indexPath) as!
             DetailBusCollectionViewCell
+            
             if indexPath.row == 3{
                 cell.isHidden = false
             } else {
