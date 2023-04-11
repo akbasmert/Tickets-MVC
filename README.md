@@ -9,5 +9,5 @@ DENEME AMAÇLI OLUŞTURULMUŞTUR. DÜZENLENECEKTİR.
 
 deneme
 
-![](https://github.com/akbasmert/Swift-Bilet-Uygulamasi/blob/main/biletim.gif=400x800)
+![](https://github.com/akbasmert/Swift-Bilet-Uygulamasi/blob/main/biletim.gif =400x800)
 
