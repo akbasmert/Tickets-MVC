@@ -96,9 +96,7 @@
 		413246AA29D83E7900AC7E3F /* Bilet */ = {
 			isa = PBXGroup;
 			children = (
-				41E9B41029E2210B00CEC11F /* animationCheck.json */,
-				41E9B41429E234C500CEC11F /* animationmap.json */,
-				41E9B41229E2330800CEC11F /* mapAnimation.json */,
+				41E9B41829E57A2900CEC11F /* Animation */,
 				413246C829D8708E00AC7E3F /* View */,
 				413246BF29D83E8600AC7E3F /* Model */,
 				413246AB29D83E7900AC7E3F /* AppDelegate.swift */,
@@ -140,6 +138,16 @@
 				41E9B40B29E1936D00CEC11F /* MyTicketsTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		41E9B41829E57A2900CEC11F /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				41E9B41229E2330800CEC11F /* mapAnimation.json */,
+				41E9B41429E234C500CEC11F /* animationmap.json */,
+				41E9B41029E2210B00CEC11F /* animationCheck.json */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
