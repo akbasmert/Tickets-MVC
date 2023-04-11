@@ -129,6 +129,7 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
                   let alertReservation =   UIAlertController(title: "", message: "5 ten fazla koltuk seçemezsiniz.", preferredStyle: .alert)
                      alertReservation.addAction(UIAlertAction(title: "Tamam", style: .destructive, handler: nil))
                      self.present(alertReservation,animated: true)
+                    
                 } else {
                     cell.updateViewColor(color: .systemRed)
                     reservationSeats.append(indexPath.row)

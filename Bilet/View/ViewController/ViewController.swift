@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var animationView: UIView!
     
-    var citys = ["Adana", "Ankara", "Bursa", "Gaziantep", "İstanbul", "İzmir", "Konya", "Mersin", "Ordu", "Şanlıurfa", "Antalya"]
+    let citys = ["Adana", "Ankara", "Bursa", "Gaziantep", "İstanbul", "İzmir", "Konya", "Mersin", "Ordu", "Şanlıurfa", "Antalya"]
 
     let dateFormatter = DateFormatter()
     private var startPickerView: UIPickerView?

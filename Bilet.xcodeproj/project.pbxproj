@@ -124,20 +124,25 @@
 		413246C829D8708E00AC7E3F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				413246C929D870B800AC7E3F /* BusListViewController.swift */,
-				41EA022129D8A616004C2375 /* BusListTableViewCell.swift */,
-				416C777429D8C43F00FC4EEF /* ViewController.swift */,
-				4120BDF329D9D0790079D314 /* OnboardingViewController.swift */,
-				419FA82629DAE5F20037B0DC /* DetailViewController.swift */,
-				419FA82829DAEE0E0037B0DC /* DetailCollectionViewCell.swift */,
-				41D4FCBA29DCBCAB00CD7FEC /* DetailBusCollectionViewCell.swift */,
+				41829BC429E5E8C00008C36A /* ViewController */,
+				41E9B41929E5E6BB00CEC11F /* ViewControllerCell */,
 				41D4FCBB29DCBCAB00CD7FEC /* DetailBusCollectionViewCell.xib */,
-				41D4FCBE29DD8AB100CD7FEC /* PaymentViewController.swift */,
-				41D4FCC029DD9E9D00CD7FEC /* TicketScreenViewController.swift */,
-				41266F2C29E0A7E7003B2305 /* MyTicketsViewController.swift */,
-				41E9B40B29E1936D00CEC11F /* MyTicketsTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		41829BC429E5E8C00008C36A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41266F2C29E0A7E7003B2305 /* MyTicketsViewController.swift */,
+				41D4FCBE29DD8AB100CD7FEC /* PaymentViewController.swift */,
+				41D4FCC029DD9E9D00CD7FEC /* TicketScreenViewController.swift */,
+				419FA82629DAE5F20037B0DC /* DetailViewController.swift */,
+				4120BDF329D9D0790079D314 /* OnboardingViewController.swift */,
+				413246C929D870B800AC7E3F /* BusListViewController.swift */,
+				416C777429D8C43F00FC4EEF /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		41E9B41829E57A2900CEC11F /* Animation */ = {
@@ -148,6 +153,17 @@
 				41E9B41029E2210B00CEC11F /* animationCheck.json */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		41E9B41929E5E6BB00CEC11F /* ViewControllerCell */ = {
+			isa = PBXGroup;
+			children = (
+				41EA022129D8A616004C2375 /* BusListTableViewCell.swift */,
+				419FA82829DAEE0E0037B0DC /* DetailCollectionViewCell.swift */,
+				41D4FCBA29DCBCAB00CD7FEC /* DetailBusCollectionViewCell.swift */,
+				41E9B40B29E1936D00CEC11F /* MyTicketsTableViewCell.swift */,
+			);
+			path = ViewControllerCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
