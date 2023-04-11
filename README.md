@@ -1,0 +1,7 @@
+# Swift-Bilet-Uygulamasi
+
+BAŞLIK
+AÇIKLAMALR
+
+
+DENEME AMAÇLI OLUŞTURULMUŞTUR. DÜZENLENECEKTİR.
