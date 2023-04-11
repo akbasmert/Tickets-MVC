@@ -20,12 +20,11 @@ class ViewController: UIViewController {
     let dateFormatter = DateFormatter()
     private var startPickerView: UIPickerView?
     private var lastPickerView: UIPickerView?
-    private var startCity: String = ""
-    private var lastCity: String = ""
-    private var date: String = ""
     private var tomorrow: Bool = false
     private var today: Bool = true
-    
+    var startCity: String = ""
+    var lastCity: String = ""
+    var date: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -18,7 +18,7 @@ class MyTicketsViewController: UIViewController {
     private var ticketTotalPrice: String = ""
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad() 
         tableView.delegate = self
         tableView.dataSource = self
     }
