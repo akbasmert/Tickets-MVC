@@ -3,6 +3,7 @@
 ## BİLETİM application was written with swift in accordance with MVC architecture. The application consists of 7 screens.
 
 <img src="https://github.com/akbasmert/Swift-Bilet-Uygulamasi/blob/main/biletim2.gif" width="300" height="600" />
+Note: Above is a gif promoting the app. Downloading late due to file size.
 
 ## 1 OnboardingScreen
 
