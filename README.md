@@ -16,17 +16,38 @@ Written using scrollview, pagecontroller and button. It consists of 3 pages.
 
 <img src="https://github.com/akbasmert/Swift-Bilet-Uygulamasi/blob/main/screenShot/onboarding2.png" width="300" height="600" />
 
-## 1 ViewController
+## 2 ViewController
 
 <img src="https://github.com/akbasmert/Swift-Bilet-Uygulamasi/blob/main/screenShot/viewcontroller.png" width="300" height="600" />
 
-## 1 MyTicketsViewController
+## 3 MyTicketsViewController
 
-### Ticket not purchased.
+### Ticket not purchased
 
 <img src="https://github.com/akbasmert/Swift-Bilet-Uygulamasi/blob/main/screenShot/biletlerim2.png" width="300" height="600" />
 
-### Ticket purchased.
+### Ticket purchased
 
 <img src="https://github.com/akbasmert/Swift-Bilet-Uygulamasi/blob/main/screenShot/biletlerim.png" width="300" height="600" />
 
+## 4 BusListViewController
+
+<img src="https://github.com/akbasmert/Swift-Bilet-Uygulamasi/blob/main/screenShot/busList.png" width="300" height="600" />
+
+## 5 DetailViewController
+
+### No seat selected
+
+<img src="https://github.com/akbasmert/Swift-Bilet-Uygulamasi/blob/main/screenShot/detailScreen.png" width="300" height="600" />
+
+### Seat selected
+
+<img src="https://github.com/akbasmert/Swift-Bilet-Uygulamasi/blob/main/screenShot/detailScreen2.png" width="300" height="600" />
+
+## 6 PaymentViewController
+
+<img src="https://github.com/akbasmert/Swift-Bilet-Uygulamasi/blob/main/screenShot/payment.png" width="300" height="600" />
+
+## 7 TicketScreenViewController
+
+<img src="https://github.com/akbasmert/Swift-Bilet-Uygulamasi/blob/main/screenShot/ticket.png" width="300" height="600" />
