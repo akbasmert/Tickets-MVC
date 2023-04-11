@@ -11,6 +11,5 @@ DENEME AMAÇLI OLUŞTURULMUŞTUR. DÜZENLENECEKTİR.
 
 deneme
 
-![](https://github.com/akbasmert/Swift-Bilet-Uygulamasi/blob/main/biletim.gif = width: 400, height: 800)
 
 <img src="https://github.com/akbasmert/Swift-Bilet-Uygulamasi/blob/main/biletim.gif" width="400" height="800" />
